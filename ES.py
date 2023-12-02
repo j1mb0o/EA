@@ -11,12 +11,13 @@ mu = 10
 lamda = 20
 # To make your results reproducible (not required by the assignment), you could set the random seed by
 # `np.random.seed(some integer, e.g., 42)`
+np.random.seed(42)
 
 def initialize(mu, dimension, upperbound = 1.0 , lowerbound = 0.0):
     parent = []
     parent_sigma = []
     for i in range(mu):
-        parent.append(np.random.uniform(low = 0, high = 1.0, size = dimension))
+        parent.append(np.random.uniform(low = lowerbound, high = upperbound, size = dimension))
         parent_sigma.append(0.05 * (upperbound - lowerbound))
 
     return parent, parent_sigma
@@ -27,8 +28,8 @@ def mutation(parent, parent_sigma,tau):
         parent_sigma[i] = parent_sigma[i] * np.exp(np.random.normal(0,tau))
         for j in range(len(parent[i])):
             parent[i][j] = parent[i][j] + np.random.normal(0,parent_sigma[i])
-            parent[i][j] = parent[i][j] if parent[i][j] < 5.0 else 5.0
-            parent[i][j] = parent[i][j] if parent[i][j] > -5.0 else -5.0            
+            parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
+            parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0            
 
 def encode(x):
     return [1 if i >= 0.5 else 0 for i in x]
@@ -36,13 +37,20 @@ def encode(x):
 
 def recombination(parent, parent_sigma, recombination_type = 'discreet'):
     # Discreet recombination
-    [p1, p2] = np.random.choice(len(parent), 2, replace = False)
-    choice = np.random.randint(2, size=len(parent[0]))
-    offspring = np.where(choice == 0, parent[p1], parent[p2])
-    sigma = np.where(choice == 0, parent_sigma[p1], parent_sigma[p2])
-    return offspring,sigma.mean()
+    if recombination_type == 'discreet':
+        [p1, p2] = np.random.choice(len(parent), 2, replace = False)
+        choice = np.random.randint(2, size=len(parent[0]))
+        offspring = np.where(choice == 0, parent[p1], parent[p2])
+        sigma = np.where(choice == 0, parent_sigma[p1], parent_sigma[p2])
+        sigma = sigma.mean()
+        # return offspring,sigma.mean()
+    elif recombination_type == 'intermediate':
+        [p1,p2] = np.random.choice(len(parent),2,replace = False)
+        offspring = (parent[p1] + parent[p2])/2
+        sigma = (parent_sigma[p1] + parent_sigma[p2])/2 
 
-def studentnumber1_studentnumber2_ES(problem):
+    return offspring,sigma
+def studentnumber1_studentnumber2_ES(problem, lambda_=20, mu=10):
     # hint: F18 and F19 are Boolean problems. Consider how to present bitstrings as real-valued vectors in ES
     # initial_pop = ... make sure you randomly create the first population
     x_opt = None
@@ -56,20 +64,13 @@ def studentnumber1_studentnumber2_ES(problem):
         if parent_f[i] < f_opt:
             f_opt = parent_f[i]
             x_opt = parent[i].copy()
-    # exit()
-    # `problem.state.evaluations` counts the number of function evaluation automatically,
-    # which is incremented by 1 whenever you call `problem(x)`.
-    # You could also maintain a counter of function evaluations if you prefer.
+    
     while problem.state.evaluations < budget:
-        # pass
-        # please implement the mutation, crossover, selection here
-        # .....
-        # this is how you evaluate one solution `x`
-        # f = problem(x)
+
         offspring = []
         offspring_sigma = []
         offspring_f = []
-
+        
         for i in range(lamda):
             o, s = recombination(parent, parent_sigma)
             offspring.append(o)
@@ -88,14 +89,14 @@ def studentnumber1_studentnumber2_ES(problem):
         parent_sigma = []
         parent_f = []
         i = 0
-        while ((i<lamda) & len(parent) < mu):
+        while ((i<lamda) & (len(parent) < mu)):
             if rank[i] < mu:
                 parent.append(offspring[i])
                 parent_sigma.append(offspring_sigma[i])
                 parent_f.append(offspring_f[i])
             i = i + 1
 
-    print("Best found solution: f = {}, x = {}".format(f_opt, x_opt))
+    print("Best found solution: f = {}".format(f_opt))
 
 
     # no return value needed 
