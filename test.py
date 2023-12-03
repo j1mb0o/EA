@@ -1,71 +1,46 @@
 from ioh import get_problem, logger, ProblemClass
-import sys
 import numpy as np
+dimension = 10
+def create_problem(fid: int):
+    # Declaration of problems to be tested.
+    problem = get_problem(fid, dimension=dimension, instance=1, problem_class=ProblemClass.PBO)
 
-# def create_problem(fid: int):
-#     # Declaration of problems to be tested.
-#     problem = get_problem(fid, dimension=dimension, instance=1, problem_class=ProblemClass.PBO)
+    # Create default logger compatible with IOHanalyzer
+    # `root` indicates where the output files are stored.
+    # `folder_name` is the name of the folder containing all output. You should compress the folder 'run' and upload it to IOHanalyzer.
+    l = logger.Analyzer(
+        root="data",  # the working directory in which a folder named `folder_name` (the next argument) will be created to store data
+        folder_name="run",  # the folder name to which the raw performance data will be stored
+        algorithm_name="genetic_algorithm",  # name of your algorithm
+        algorithm_info="Practical assignment of the EA course",
+    )
+    # attach the logger to the problem
+    problem.attach_logger(l)
+    return problem, l
 
-#     # Create default logger compatible with IOHanalyzer
-#     # `root` indicates where the output files are stored.
-#     # `folder_name` is the name of the folder containing all output. You should compress the folder 'run' and upload it to IOHanalyzer.
-#     l = logger.Analyzer(
-#         root="data",  # the working directory in which a folder named `folder_name` (the next argument) will be created to store data
-#         folder_name="run",  # the folder name to which the raw performance data will be stored
-#         algorithm_name="genetic_algorithm",  # name of your algorithm
-#         algorithm_info="Practical assignment of the EA course",
-#     )
-#     # attach the logger to the problem
-#     problem.attach_logger(l)
-#     return problem, l
+prob, l = create_problem(1)
 
+# x = np.array([1 for i in range(dimension)])
 
+# print(prob(x))  
 
-# def encode_mean(x):
-#     return [1 if i >= x.mean() else 0 for i in x]
+offsprings = np.random.randint(2, size=(10, dimension))
+# print(offsprings, prob(offsprings))
+for i in offsprings:
+    print(i, prob(i))
 
+rank = np.argsort(prob(offsprings))
 
+sorted_offsprings = offsprings[rank]
+print("Sorted offsprings")
+for i in sorted_offsprings:
+    print(i, prob(i))
 
-# dimension=50
+mu_ = 5
 
-# F18, _logger = create_problem(18)
+parent = sorted_offsprings[:mu_]
+parent_f = prob(parent)
 
-# print(F18.meta_data.n_variables)
-
-# parent = [np.random.uniform(low = 0, high = 1.0, size = 10)]
-# # choice = np.random.randint(2, size=len(parent[0]))
-# # choice = [1 for _ in range(dimension)]
-# # print(len(parent))
-# print(parent)
-# # print([1 if i >= np.mean(parent) else 0 for i in parent[i]])
-# # print([1 if i >= 0.5 else 0 for i in parent[i]])
-# x1 = encode(parent[0])
-# x2 = encode_mean(parent[0])
-# print(x1)
-# print(x2)
-# print(np.mean(parent))
-
-def recombination(parent, recombination_type = 'discreet'):
-    # Discreet recombination
-    if recombination_type == 'discreet':
-        [p1, p2] = np.random.choice(len(parent), 2, replace = False)
-        
-        choice = np.random.randint(2, size=len(parent[0]))
-        print(p1, p2)
-        print(choice)
-        offspring = np.where(choice == 0, parent[p1], parent[p2])
-    elif recombination_type == 'intermediate':
-        
-        [p1,p2] = np.random.choice(len(parent),2,replace = False)
-        print(p1, p2)
-        offspring = (parent[p1] + parent[p2])/2
-        
-    elif recombination_type == 'globlal_discrete':
-        choice = np.random.randint(len(parent), size=len(parent[0]))
-        print(choice)
-        offspring = np.array([parent[choice[i]][i] for i in range(len(parent[0]))])
-
-    else:
-        offspring = np.average(parent, axis=0)
-
-    return offspring
+print("Parent")
+for i in range(len(parent)):
+    print(parent[i], parent_f[i])
