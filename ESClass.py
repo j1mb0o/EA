@@ -1,11 +1,17 @@
-class EvolutionaryStrategy:
-    def __init__(self, mu, dimension, upperbound=1.0, lowerbound=0.0):
+import numpy as np
+
+class EStrategy:
+    def __init__(self, mu, lamda_, dimension, upperbound=1.0, lowerbound=0.0):
         np.random.seed(42)
         self.mu = mu
         self.dimension = dimension
         self.upperbound = upperbound
         self.lowerbound = lowerbound
+        self.parent, self.parent_sigma = self.initialize()
+        self.parent_f = []
+        self.offspring, self.offspring_sigma, self.offspring_f = [], [], []
 
+        
     def initialize(self):
         parent = []
         parent_sigma = []
@@ -17,7 +23,8 @@ class EvolutionaryStrategy:
 
         return parent, parent_sigma
 
-    def one_sigma_mutation(self, parent, parent_sigma, tau):
+    def one_sigma_mutation(self, parent, parent_sigma):
+        tau = 1.0 / np.sqrt(self.dimension)
         for i in range(len(parent)):
             parent_sigma[i] = parent_sigma[i] * np.exp(np.random.normal(0, tau))
             for j in range(len(parent[i])):
@@ -25,11 +32,13 @@ class EvolutionaryStrategy:
                 parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
                 parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
 
-    def individual_sigma_mutation(self, parent, parent_sigma, tau_globla, tau_local):
+    def individual_sigma_mutation(self, parent, parent_sigma):
+        tau_global = 1.0 / np.sqrt(2 * self.dimension)
+        tau_local = 1.0 / np.sqrt(2 * np.sqrt(self.dimension))
         g = np.random.normal(0, 1)
         for i in range(len(parent)):
             parent_sigma[i] = parent_sigma[i] * np.exp(
-                tau_globla * g + tau_local * np.random.normal(0, 1)
+                tau_global * g + tau_local * np.random.normal(0, 1)
             )
             for j in range(len(parent[i])):
                 parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
@@ -65,4 +74,21 @@ class EvolutionaryStrategy:
             offspring = np.average(parent, axis=0)
             sigma = np.array(parent_sigma).mean()
 
+        # self.offspring = offspring
         return offspring, sigma
+
+
+    def selection(self, select_type="comma"):
+        if select_type == "plus":
+            pass
+        elif select_type == "comma":
+            rank = np.argsort(self.offspring_f)
+            sorted_offspring = np.array(self.offspring)[rank]
+            sorted_offspring_sigma = np.array(self.offspring_sigma)[rank]
+            sorted_offspring_f = np.array(self.offspring_f)[rank]
+            self.parent = sorted_offspring[:self.mu]
+            self.parent_sigma = sorted_offspring_sigma[:self.mu]
+            self.parent_f = sorted_offspring_f[:self.mu]
+            
+
+

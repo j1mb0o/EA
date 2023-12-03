@@ -1,10 +1,6 @@
 import numpy as np
 
-
 np.random.seed(42)
-
-
-
 
 def initialize(mu, dimension, upperbound=1.0, lowerbound=0.0):
     parent = []
@@ -18,7 +14,6 @@ def initialize(mu, dimension, upperbound=1.0, lowerbound=0.0):
     return parent, parent_sigma
 
 
-# One-sigma mutation
 def one_sigma_mutation(parent, parent_sigma, tau):
     for i in range(len(parent)):
         parent_sigma[i] = parent_sigma[i] * np.exp(np.random.normal(0, tau))
@@ -28,21 +23,19 @@ def one_sigma_mutation(parent, parent_sigma, tau):
             parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
 
 
-def individual_sigma_mutation(parent, parent_sigma, tau_globla, tau_local):
+def individual_sigma_mutation(parent, parent_sigma, tau_global, tau_local):
     g = np.random.normal(0, 1)
     for i in range(len(parent)):
         parent_sigma[i] = parent_sigma[i] * np.exp(
-            tau_globla * g + tau_local * np.random.normal(0, 1)
+            tau_global * g + tau_local * np.random.normal(0, 1)
         )
         for j in range(len(parent[i])):
             parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
             parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
             parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
 
-
 def encode(x):
     return [1 if i >= 0.5 else 0 for i in x]
-
 
 def recombination(parent, parent_sigma, recombination_type="discreet"):
     # Discreet recombination
@@ -73,4 +66,27 @@ def recombination(parent, parent_sigma, recombination_type="discreet"):
 
     return offspring, sigma
 
+def comma_selection(offspring, offspring_f, offspring_sigma,mu):
 
+    rank = np.argsort(offspring_f)[::-1]
+    sorted_offspring = np.array(offspring)[rank]
+    sorted_offspring_sigma = np.array(offspring_sigma)[rank]
+    sorted_offspring_f = np.array(offspring_f)[rank]
+    parent = sorted_offspring[:mu]
+    parent_sigma = sorted_offspring_sigma[:mu]
+    parent_f = sorted_offspring_f[:mu]
+        
+    return parent, parent_sigma, parent_f
+
+def plus_selection(parent, parent_f, parent_sigma, offspring, offspring_f, offspring_sigma, mu):
+
+    candidates = np.vstack((parent, offspring))
+    candidates_f = np.hstack((parent_f, offspring_f))
+    candidates_sigma = np.hstack((parent_sigma, offspring_sigma))
+
+    rank = np.argsort(candidates_f)[::-1]
+    sorted_candidates = np.array(candidates)[rank]
+    sorted_candidates_sigma = np.array(candidates_sigma)[rank]
+    sorted_candidates_f = np.array(candidates_f)[rank]
+
+    return sorted_candidates[:mu], sorted_candidates_sigma[:mu], sorted_candidates_f[:mu]
