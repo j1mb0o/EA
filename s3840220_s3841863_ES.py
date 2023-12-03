@@ -5,6 +5,7 @@ import numpy as np
 # https://pypi.org/project/ioh/
 from ioh import get_problem, logger, ProblemClass
 import sys
+from itertools import product
 from ES_utils import (
     initialize,
     one_sigma_mutation,
@@ -18,8 +19,8 @@ from ES_utils import (
 
 budget = 5000
 dimension = 50
-mu = 10
-lamda_ = 20
+mu = 30
+lamda_ = 50
 # To make your results reproducible (not required by the assignment), you could set the random seed by
 # `np.random.seed(some integer, e.g., 42)`
 np.random.seed(42)
@@ -104,7 +105,9 @@ def create_problem(fid: int):
 
 if __name__ == "__main__":
     # this how you run your algorithm with 20 repetitions/independent run
-    F18, _logger = create_problem(18)
+    # combinations = 
+
+    F18, _logger = create_problem(18,)
     for run in range(20):
         s3840220_s3841863_ES(F18)
 
