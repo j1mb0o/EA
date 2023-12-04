@@ -9,28 +9,28 @@ from itertools import product
 from ES_utils import (
     initialize,
     one_sigma_mutation,
+    individual_sigma_mutation,
     encode,
     recombination,
-    individual_sigma_mutation,
     comma_selection,
     plus_selection,
 )
 
 
 budget = 5000
-dimension = 50
-mu = 30
-lamda_ = 50
+# dimension =git 
 # To make your results reproducible (not required by the assignment), you could set the random seed by
 # `np.random.seed(some integer, e.g., 42)`
 np.random.seed(42)
 
 
-def s3840220_s3841863_ES(problem, lamda_=20, mu=10):
+def s3840220_s3841863_ES(problem, experiments=False, **kwargs):
     # hint: F18 and F19 are Boolean problems. Consider how to present bitstrings as real-valued vectors in ES
     # initial_pop = ... make sure you randomly create the first population
     x_opt = None
     f_opt = sys.float_info.min
+    mu = kwargs["mu"]
+    lamda_ = kwargs["lamda_"]
 
     tau = 1.0 / np.sqrt(problem.meta_data.n_variables)
     tau_local = 1.0 / np.sqrt(2 * np.sqrt(problem.meta_data.n_variables))
@@ -53,11 +53,16 @@ def s3840220_s3841863_ES(problem, lamda_=20, mu=10):
         offspring_f = []
 
         for i in range(lamda_):
-            o, s = recombination(parent, parent_sigma)
+            o, s = recombination(parent, parent_sigma, kwargs["recombination"])
             offspring.append(o)
             offspring_sigma.append(s)
         # Mutation
-        one_sigma_mutation(offspring, offspring_sigma, tau)
+        if kwargs["mutation"] == "one_sigma":
+            one_sigma_mutation(offspring, offspring_sigma, tau)
+        elif kwargs["mutation"] == "individual_sigma":
+            individual_sigma_mutation(
+                offspring, offspring_sigma, tau_global=tau_global, tau_local=tau_local
+            )
         # individual_sigma_mutation(offspring, offspring_sigma, tau_global=tau_global, tau_local=tau_local)
 
         # Offspring evaluation
@@ -67,19 +72,25 @@ def s3840220_s3841863_ES(problem, lamda_=20, mu=10):
                 f_opt = offspring_f[i]
                 x_opt = offspring[i].copy()
 
+        if kwargs["selection"] == "comma":
+            parent, parent_sigma, parent_f = comma_selection(
+                offspring, offspring_sigma, offspring_f, mu
+            )
         # parent, parent_sigma, parent_f = comma_selection(offspring, offspring_sigma, offspring_f, mu)
-        parent, parent_sigma, parent_f = plus_selection(
-            parent=parent,
-            parent_sigma=parent_sigma,
-            parent_f=parent_f,
-            offspring=offspring,
-            offspring_sigma=offspring_sigma,
-            offspring_f=offspring_f,
-            mu=mu,
-        )
+        elif kwargs["selection"] == "plus":
+            parent, parent_sigma, parent_f = plus_selection(
+                parent=parent,
+                parent_sigma=parent_sigma,
+                parent_f=parent_f,
+                offspring=offspring,
+                offspring_sigma=offspring_sigma,
+                offspring_f=offspring_f,
+                mu=mu,
+            )
 
-    print("Best found solution: f = {}".format(f_opt))
-
+    # print("Best found solution: f = {}".format(f_opt))
+    if experiments:
+        return f_opt
     # no return value needed
 
 
