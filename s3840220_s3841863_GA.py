@@ -3,8 +3,7 @@ import numpy as np
 # https://iohprofiler.github.io/IOHexp/ and
 # https://pypi.org/project/ioh/
 from ioh import get_problem, logger, ProblemClass
-import sys
-from itertools import product
+
 from GA_utils import one_point_crossover,n_point_crossover,uniform_crossover
 from GA_utils import  bit_flip_mutation,swap_mutation
 from GA_utils import proportional_seletion, tournament_seletion
@@ -12,37 +11,12 @@ np.random.seed(42)
 
 dimension = 50
 
-def grid_search(problem):
-    param_grid = {
-        "selection_mechanism": ["proportional_seletion","tournament_seletion"],
-        "crossover_mechanism": ["one_point_crossover","n_point_crossover","uniform_crossover"],
-        "mutation_mechanism": ["bit_flip_mutation","swap_mutation"],
-        "population_size": [50, 100, 150],
-        "mutation_rate": [0.01, 0.02, 0.05],
-        "crossover_probability": [0.5, 0.7],
-        "tournament_k": [10, 20]
-    }
-
-    for params in product(*param_grid.values()):
-        param_dict = dict(zip(param_grid.keys(), params))
-        mean_fitness = s3840220_s3841863_GA(problem, **param_dict)
-        
-        if mean_fitness > best_fitness:
-            best_fitness = mean_fitness
-            best_params = param_dict
-
-    print("Best mean fitness:", best_fitness)
-    print("Best parameters:", best_params)
-
-
-
-
-def s3840220_s3841863_GA(problem, ):
+def s3840220_s3841863_GA(problem, experiments=False, **kwargs):
     budget = 5000
 
     f_opt = problem.state.evaluations
     x_opt = None
-
+    pop_size = kwargs["pop_size"]
     parent = []
     parent_f = []
     # initial_pop = ... make sure you randomly create the first population
@@ -55,23 +29,34 @@ def s3840220_s3841863_GA(problem, ):
     # You could also maintain a counter of function evaluations if you prefer.
         initial_pop_f = np.array(problem(initial_pop))
         parent_f.append(initial_pop_f)
-        budget = budget - 1
+        # budget = budget - 1
 
     while problem.state.evaluations < budget:
         # please implement the mutation, crossover, selection here
-        offspring = proportional_seletion(parent,parent_f)
-        
+        if kwargs["sel_mech"] == "proportional_seletion":
+            offspring = proportional_seletion(parent,parent_f)
+        else:
+            offspring = tournament_seletion(parent,parent_f,kwargs["tour_k"])
+            
         for i in range(0,pop_size - (pop_size%2),2) :
-            uniform_crossover(offspring[i], offspring[i+1])
+            if kwargs["cross_mech"] == "one_point_crossover":
+               offspring[i], offspring[i+1] = one_point_crossover(offspring[i], offspring[i+1], kwargs["cross_prob"])
+            elif kwargs["cross_mech"] == "n_point_crossover":
+                offspring[i], offspring[i+1] = n_point_crossover(offspring[i], offspring[i+1], 10, kwargs["cross_prob"] )
+            else:
+                offspring[i], offspring[i+1] = uniform_crossover(offspring[i], offspring[i+1], kwargs["cross_prob"])
 
 
         for i in range(pop_size):
-            bit_flip_mutation(offspring[i])
+            if kwargs["mut_mech"] == "swap_mutation":
+                offspring[i] = swap_mutation(offspring[i], kwargs["mut_rate"])
+            else:
+                offspring[i] = bit_flip_mutation(offspring[i], kwargs["mut_rate"])
 
         parent = offspring.copy()
         for i in range(pop_size) : 
             parent_f[i] = problem(parent[i])
-            budget = budget - 1
+            # budget = budget - 1
             if parent_f[i] > f_opt:
                     f_opt = parent_f[i]
                     x_opt = parent[i].copy()
@@ -80,8 +65,9 @@ def s3840220_s3841863_GA(problem, ):
         # f = problem(x)
     # no return value needed 
     problem.reset()
-    print(f_opt)
-    # return f_opt, x_opt
+    # print(f_opt)
+    if experiments:
+        return f_opt
 
 
 
