@@ -34,6 +34,7 @@ def run_experiment(fid: int,
     results = []
     for run in range(20):
         x = s3840220_s3841863_ES(problem=problem,
+                                fnum=fid,
                                 experiments=True,        
                                 mutation=mutation,
                                 recombination=recombination,
@@ -70,7 +71,7 @@ if __name__ == "__main__":
             f"Running combination {i+1} of {len(combinations)} ({(i+1)/len(combinations)*100:.2f}%)"
         )
         res = run_experiment(
-            18, 50, f"{comb[0]}_{comb[1]}_{comb[2]}_{comb[3]}_{comb[4]}", *comb
+            19, 50, f"{comb[0]}_{comb[1]}_{comb[2]}_{comb[3]}_{comb[4]}", *comb
         )
 
         comb_dict[res] = comb

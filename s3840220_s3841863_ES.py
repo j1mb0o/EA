@@ -24,7 +24,7 @@ budget = 5000
 np.random.seed(42)
 
 
-def s3840220_s3841863_ES(problem, experiments=False, **kwargs):
+def s3840220_s3841863_ES(problem, fnum=18,experiments=False, **kwargs):
     # hint: F18 and F19 are Boolean problems. Consider how to present bitstrings as real-valued vectors in ES
     # initial_pop = ... make sure you randomly create the first population
     x_opt = None
@@ -36,7 +36,11 @@ def s3840220_s3841863_ES(problem, experiments=False, **kwargs):
     tau_local = 1.0 / np.sqrt(2 * np.sqrt(problem.meta_data.n_variables))
     tau_global = 1.0 / np.sqrt(2 * problem.meta_data.n_variables)
     # Initialize
-    parent, parent_sigma = initialize(mu, dimension=problem.meta_data.n_variables)
+
+    if fnum == 19:
+        parent, parent_sigma = initialize(mu, lowerbound=-1.0, upperbound=1.0, dimension=problem.meta_data.n_variables)
+    else:
+        parent, parent_sigma = initialize(mu, dimension=problem.meta_data.n_variables)
 
     # Evaluate parent
     parent_f = []
@@ -58,10 +62,10 @@ def s3840220_s3841863_ES(problem, experiments=False, **kwargs):
             offspring_sigma.append(s)
         # Mutation
         if kwargs["mutation"] == "one_sigma":
-            one_sigma_mutation(offspring, offspring_sigma, tau)
+            one_sigma_mutation(fnum, offspring, offspring_sigma, tau)
         elif kwargs["mutation"] == "individual_sigma":
             individual_sigma_mutation(
-                offspring, offspring_sigma, tau_global=tau_global, tau_local=tau_local
+               fnum, offspring, offspring_sigma, tau_global=tau_global, tau_local=tau_local
             )
         # individual_sigma_mutation(offspring, offspring_sigma, tau_global=tau_global, tau_local=tau_local)
 

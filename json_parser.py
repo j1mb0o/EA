@@ -31,7 +31,7 @@ for i in final_names:
 
 for dir in os.listdir('data'):
     # print(dir)
-    with open('data/' + dir + '/IOHprofiler_f18_LABS.json', 'r') as f:
+    with open('data/' + dir + '/IOHprofiler_f19_IsingRing.json', 'r') as f:
         data = json.load(f)
         # print(data['algorithm']['name'])
         name = data['algorithm']['name']

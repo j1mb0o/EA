@@ -96,7 +96,19 @@ sequences = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 # Assuming fitness values are in a separate array
 fitness = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
-print(np.vstack((sequences, fitness)))
+def swap_mutation(p,mutation_rate):
+    for i in range(len(p)):
+        if np.random.uniform(0,1) < mutation_rate:
+            print(p)
+            point = np.random.randint(0,len(p))
+            print(p[point])
+            p[i],p[point] = p[point],p[i]
+    return p
+
+p = swap_mutation(sequences[0],1)
+
+print(p)
+# print(np.vstack((sequences, fitness)))
 # # Get the indices that would sort the fitness array in descending order
 # sorted_indices = np.argsort(fitness)[::-1]
 

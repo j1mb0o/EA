@@ -14,25 +14,34 @@ def initialize(mu, dimension, upperbound=1.0, lowerbound=0.0):
     return parent, parent_sigma
 
 
-def one_sigma_mutation(parent, parent_sigma, tau):
+def one_sigma_mutation(fnum, parent, parent_sigma, tau):
     for i in range(len(parent)):
         parent_sigma[i] = parent_sigma[i] * np.exp(np.random.normal(0, tau))
         for j in range(len(parent[i])):
-            parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
-            parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
-            parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
+            if fnum == 18:
+                parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
+                parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
+                parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
+            else:
+                parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
+                parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
+                parent[i][j] = parent[i][j] if parent[i][j] > -1.0 else -1.0
 
-
-def individual_sigma_mutation(parent, parent_sigma, tau_global, tau_local):
+def individual_sigma_mutation(fnum, parent, parent_sigma, tau_global, tau_local):
     g = np.random.normal(0, 1)
     for i in range(len(parent)):
         parent_sigma[i] = parent_sigma[i] * np.exp(
             tau_global * g + tau_local * np.random.normal(0, 1)
         )
         for j in range(len(parent[i])):
-            parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
-            parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
-            parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
+            if fnum== 18:
+                parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
+                parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
+                parent[i][j] = parent[i][j] if parent[i][j] > 0.0 else 0.0
+            else:
+                parent[i][j] = parent[i][j] + np.random.normal(0, parent_sigma[i])
+                parent[i][j] = parent[i][j] if parent[i][j] < 1.0 else 1.0
+                parent[i][j] = parent[i][j] if parent[i][j] > -1.0 else -1.0
 
 def encode(x):
     return [1 if i >= 0.5 else 0 for i in x]
