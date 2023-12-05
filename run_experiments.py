@@ -1,6 +1,5 @@
 from s3840220_s3841863_GA import s3840220_s3841863_GA
 from itertools import product
-from tqdm import tqdm
 from ioh import get_problem, logger, ProblemClass
 import numpy as np
 import json
@@ -73,7 +72,7 @@ if __name__ == "__main__":
     for i, param_set in enumerate(param_combinations):
         print(f"Running combination {i+1} of {len(param_combinations)} ({(i+1)/len(param_combinations)*100:.2f}%)")
         print(*param_set)
-        res=run_experiments(18, 50, f"{param_set[0]}_{param_set[1]}_{param_set[2]}_{param_set[3]}_{param_set[4]}_{param_set[5]}_{param_set[6]}", *param_set)
+        res=run_experiments(19, 50, f"{param_set[0]}_{param_set[1]}_{param_set[2]}_{param_set[3]}_{param_set[4]}_{param_set[5]}_{param_set[6]}", *param_set)
         combination_dict[res] = param_set
 
     sorted_combinations = sorted(combination_dict.items(), key=lambda x: x[0], reverse=True)

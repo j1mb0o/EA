@@ -1,82 +1,94 @@
 [
     [
-        4.302932010554821,
+        50.0,
         [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
             50,
             0.05,
-            0.5,
+            0.7,
             20
         ]
     ],
     [
-        4.273898680883697,
+        49.9,
         [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            50,
             0.05,
-            0.7,
+            0.5,
             20
         ]
     ],
     [
-        4.240524024027854,
+        49.7,
         [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
+            "proportional_seletion",
+            "n_point_crossover",
+            "swap_mutation",
             50,
             0.05,
             0.5,
-            20
+            10
         ]
     ],
     [
-        4.19253352414551,
+        49.6,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
+            "swap_mutation",
+            50,
+            0.05,
+            0.7,
             10
         ]
     ],
     [
-        4.1789043647448185,
+        49.3,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            150,
+            "swap_mutation",
+            100,
             0.05,
-            0.7,
-            20
+            0.5,
+            10
         ]
     ],
     [
-        4.167024698984963,
+        48.8,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "one_point_crossover",
-            "bit_flip_mutation",
-            50,
+            "swap_mutation",
+            100,
+            0.05,
+            0.7,
+            10
+        ]
+    ],
+    [
+        48.7,
+        [
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            100,
             0.05,
             0.7,
             20
         ]
     ],
     [
-        4.153353510120325,
+        48.5,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "one_point_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             100,
             0.05,
             0.7,
@@ -84,11 +96,11 @@
         ]
     ],
     [
-        4.1441968642477045,
+        48.4,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             100,
             0.05,
             0.7,
@@ -96,262 +108,286 @@
         ]
     ],
     [
-        4.100022294023782,
+        48.2,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            20
+            "swap_mutation",
+            50,
+            0.02,
+            0.7,
+            10
         ]
     ],
     [
-        4.08998530043098,
+        47.9,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
+            "swap_mutation",
+            100,
+            0.02,
+            0.7,
             20
         ]
     ],
     [
-        4.086942648209767,
+        47.8,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
+            "swap_mutation",
+            50,
+            0.02,
             0.5,
             20
         ]
     ],
     [
-        4.073840774694085,
+        47.7,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
+            "swap_mutation",
+            100,
             0.05,
             0.7,
-            20
+            10
         ]
     ],
     [
-        4.065847550741874,
+        47.5,
         [
             "tournament_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
-            50,
+            "swap_mutation",
+            150,
             0.05,
-            0.5,
+            0.7,
             10
         ]
     ],
     [
-        4.0577311334522905,
+        47.4,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            100,
-            0.02,
+            50,
+            0.05,
             0.5,
-            20
+            10
         ]
     ],
     [
-        4.056334927579483,
+        47.3,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "n_point_crossover",
             "bit_flip_mutation",
             50,
-            0.02,
+            0.05,
             0.7,
             10
         ]
     ],
     [
-        4.054762778973577,
+        47.2,
         [
             "tournament_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
             50,
             0.05,
-            0.5,
+            0.7,
             20
         ]
     ],
     [
-        4.051164314985786,
+        47.1,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            100,
+            50,
             0.05,
-            0.5,
-            20
+            0.7,
+            10
         ]
     ],
     [
-        4.045098636429697,
+        47.0,
         [
             "tournament_seletion",
-            "n_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
+            100,
+            0.05,
+            0.7,
             10
         ]
     ],
     [
-        4.027033494114933,
+        46.9,
         [
             "tournament_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             100,
-            0.02,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        4.019803624324203,
+        46.8,
         [
             "tournament_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
-            50,
+            "swap_mutation",
+            150,
             0.05,
             0.7,
             20
         ]
     ],
     [
-        4.014561525875161,
+        46.7,
         [
             "tournament_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
-            50,
-            0.02,
+            100,
+            0.05,
             0.5,
             10
         ]
     ],
     [
-        4.010654435325778,
+        46.6,
         [
             "tournament_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
-            50,
+            150,
             0.05,
-            0.5,
-            10
+            0.7,
+            20
         ]
     ],
     [
-        4.0082692669421345,
+        46.5,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
+            "uniform_crossover",
+            "swap_mutation",
+            100,
+            0.05,
             0.7,
             10
         ]
     ],
     [
-        4.005052067123489,
+        46.4,
         [
             "tournament_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
-            100,
-            0.05,
+            150,
+            0.01,
             0.5,
             20
         ]
     ],
     [
-        3.992976861625894,
+        46.3,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            50,
+            150,
             0.02,
-            0.5,
-            10
+            0.7,
+            20
         ]
     ],
     [
-        3.9894814370969724,
+        46.2,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            100,
+            50,
             0.02,
             0.7,
             10
         ]
     ],
     [
-        3.98152581667489,
+        46.1,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
+            "uniform_crossover",
+            "swap_mutation",
             150,
-            0.02,
+            0.05,
+            0.5,
+            10
+        ]
+    ],
+    [
+        46.0,
+        [
+            "tournament_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            150,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.975347916522702,
+        45.9,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            50,
-            0.02,
+            150,
+            0.05,
             0.5,
             20
         ]
     ],
     [
-        3.9731384558124163,
+        45.8,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
+            "uniform_crossover",
+            "swap_mutation",
+            150,
             0.05,
+            0.5,
+            20
+        ]
+    ],
+    [
+        45.7,
+        [
+            "tournament_seletion",
+            "uniform_crossover",
+            "bit_flip_mutation",
+            100,
+            0.02,
             0.7,
-            10
+            20
         ]
     ],
     [
-        3.971441317405227,
+        45.6,
         [
             "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
             100,
             0.02,
@@ -360,215 +396,215 @@
         ]
     ],
     [
-        3.964431766110132,
+        45.5,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
+            "swap_mutation",
+            150,
+            0.05,
             0.7,
             10
         ]
     ],
     [
-        3.9584058726162548,
+        45.4,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
+            "uniform_crossover",
+            "swap_mutation",
             100,
-            0.01,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.957977897917165,
+        45.3,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
+            "uniform_crossover",
+            "swap_mutation",
+            100,
+            0.05,
             0.5,
             20
         ]
     ],
     [
-        3.9556314397724406,
+        45.2,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             150,
-            0.05,
-            0.5,
+            0.02,
+            0.7,
             20
         ]
     ],
     [
-        3.954355720830475,
+        45.1,
         [
-            "proportional_seletion",
+            "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.7,
-            10
+            "swap_mutation",
+            150,
+            0.02,
+            0.5,
+            20
         ]
     ],
     [
-        3.9535402196933846,
+        45.0,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            20
+            "swap_mutation",
+            150,
+            0.02,
+            0.5,
+            10
         ]
     ],
     [
-        3.9513573645089286,
+        44.9,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
+            "swap_mutation",
+            100,
+            0.02,
+            0.5,
             10
         ]
     ],
     [
-        3.950743343742716,
+        44.8,
         [
-            "proportional_seletion",
+            "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
+            "swap_mutation",
+            150,
             0.01,
             0.7,
-            20
+            10
         ]
     ],
     [
-        3.9432849607624556,
+        44.7,
         [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
+            "proportional_seletion",
+            "n_point_crossover",
+            "swap_mutation",
+            150,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.938080280554389,
+        44.6,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             50,
             0.02,
-            0.7,
+            0.5,
             10
         ]
     ],
     [
-        3.9363750137481333,
+        44.5,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
+            "uniform_crossover",
+            "swap_mutation",
             150,
-            0.05,
+            0.01,
             0.7,
             20
         ]
     ],
     [
-        3.933922563808488,
+        44.4,
         [
             "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            10
+            "uniform_crossover",
+            "swap_mutation",
+            50,
+            0.01,
+            0.7,
+            20
         ]
     ],
     [
-        3.9334561997883717,
+        44.3,
         [
             "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
+            "uniform_crossover",
+            "swap_mutation",
+            150,
             0.01,
-            0.7,
-            10
+            0.5,
+            20
         ]
     ],
     [
-        3.9333033616321513,
+        44.2,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
+            "swap_mutation",
+            150,
+            0.01,
             0.5,
-            20
+            10
         ]
     ],
     [
-        3.9295899091880564,
+        44.0,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             50,
-            0.02,
-            0.7,
+            0.01,
+            0.5,
             20
         ]
     ],
     [
-        3.9218608028616635,
+        43.9,
         [
-            "proportional_seletion",
+            "tournament_seletion",
             "one_point_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             50,
             0.01,
             0.5,
-            20
+            10
         ]
     ],
     [
-        3.918236360375235,
+        43.8,
         [
             "tournament_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             100,
-            0.02,
-            0.7,
-            10
+            0.01,
+            0.5,
+            20
         ]
     ],
     [
-        3.9105213065597484,
+        43.7,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             150,
             0.02,
             0.7,
@@ -576,107 +612,95 @@
         ]
     ],
     [
-        3.906055809241644,
+        43.6,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
-            100,
+            "swap_mutation",
+            150,
             0.02,
             0.7,
-            10
-        ]
-    ],
-    [
-        3.905860943879383,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
             20
         ]
     ],
     [
-        3.9057727937160927,
+        43.5,
         [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
+            "proportional_seletion",
+            "n_point_crossover",
+            "swap_mutation",
             150,
-            0.02,
+            0.05,
             0.5,
             20
         ]
     ],
     [
-        3.9042468331445095,
+        43.3,
         [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            150,
+            0.01,
+            0.7,
             10
         ]
     ],
     [
-        3.902523693714733,
+        43.1,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
             150,
             0.01,
-            0.5,
+            0.7,
             20
         ]
     ],
     [
-        3.9003016946975206,
+        43.0,
         [
             "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
+            "swap_mutation",
+            150,
+            0.05,
             0.5,
             20
         ]
     ],
     [
-        3.892780974005318,
+        42.9,
         [
             "proportional_seletion",
-            "n_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
-            50,
+            150,
             0.01,
-            0.7,
-            10
+            0.5,
+            20
         ]
     ],
     [
-        3.8911056222899845,
+        42.8,
         [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            150,
             0.02,
             0.5,
             10
         ]
     ],
     [
-        3.889419576883436,
+        42.7,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
+            "swap_mutation",
             150,
             0.02,
             0.7,
@@ -684,35 +708,35 @@
         ]
     ],
     [
-        3.8848315114780165,
+        42.6,
         [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            10
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            150,
+            0.02,
+            0.5,
+            20
         ]
     ],
     [
-        3.8818262683977123,
+        42.4,
         [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
+            150,
+            0.05,
             0.5,
             10
         ]
     ],
     [
-        3.8815851063555087,
+        42.0,
         [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
+            "proportional_seletion",
+            "uniform_crossover",
+            "swap_mutation",
             150,
             0.02,
             0.7,
@@ -720,4466 +744,290 @@
         ]
     ],
     [
-        3.876819606565141,
+        41.9,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "one_point_crossover",
             "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
+            50,
+            0.05,
+            0.7,
             10
         ]
     ],
     [
-        3.8767104547961573,
+        41.8,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "one_point_crossover",
             "bit_flip_mutation",
             100,
-            0.01,
+            0.05,
             0.7,
             10
         ]
     ],
     [
-        3.8747296316374706,
+        41.6,
         [
-            "tournament_seletion",
-            "uniform_crossover",
+            "proportional_seletion",
+            "n_point_crossover",
             "bit_flip_mutation",
-            150,
-            0.01,
+            50,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.8722029550444916,
+        41.5,
         [
-            "tournament_seletion",
-            "n_point_crossover",
+            "proportional_seletion",
+            "one_point_crossover",
             "bit_flip_mutation",
-            150,
-            0.01,
+            50,
+            0.05,
             0.7,
-            10
+            20
         ]
     ],
     [
-        3.860092197446213,
+        41.4,
         [
-            "tournament_seletion",
-            "n_point_crossover",
+            "proportional_seletion",
+            "one_point_crossover",
             "bit_flip_mutation",
             150,
-            0.01,
-            0.7,
-            20
+            0.05,
+            0.5,
+            10
         ]
     ],
     [
-        3.8572204496581124,
+        41.3,
         [
-            "tournament_seletion",
-            "one_point_crossover",
+            "proportional_seletion",
+            "uniform_crossover",
             "bit_flip_mutation",
             150,
-            0.01,
+            0.02,
             0.5,
-            20
+            10
         ]
     ],
     [
-        3.8551563032414835,
+        41.2,
         [
-            "tournament_seletion",
-            "n_point_crossover",
+            "proportional_seletion",
+            "uniform_crossover",
             "bit_flip_mutation",
-            50,
+            150,
             0.02,
             0.5,
             20
         ]
     ],
     [
-        3.8550580963019137,
+        41.1,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
-            100,
+            150,
             0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.847952606457791,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
             0.7,
-            20
-        ]
-    ],
-    [
-        3.8457613514985214,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
             20
         ]
     ],
     [
-        3.841423617550729,
+        41.0,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.8406193441869476,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.8359585443707416,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
             "bit_flip_mutation",
             150,
-            0.01,
+            0.02,
             0.7,
             10
         ]
     ],
     [
-        3.8346927104877273,
+        40.9,
         [
-            "tournament_seletion",
-            "uniform_crossover",
+            "proportional_seletion",
+            "n_point_crossover",
             "bit_flip_mutation",
-            150,
-            0.02,
+            100,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.8334094639665452,
+        40.8,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.8309461027956777,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.82652082394779,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
             "bit_flip_mutation",
             50,
-            0.01,
+            0.05,
             0.5,
-            10
+            20
         ]
     ],
     [
-        3.825435313095145,
+        40.7,
         [
             "proportional_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
             50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.8253419015897423,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
             0.05,
             0.7,
             10
         ]
     ],
     [
-        3.821182317667323,
+        40.6,
         [
             "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.8144835347190194,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
+            "uniform_crossover",
             "bit_flip_mutation",
             50,
-            0.01,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.814473435526159,
+        40.4,
         [
-            "tournament_seletion",
-            "one_point_crossover",
+            "proportional_seletion",
+            "uniform_crossover",
             "bit_flip_mutation",
             50,
             0.05,
-            0.7,
+            0.5,
             10
         ]
     ],
     [
-        3.8090831567559436,
+        40.1,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "n_point_crossover",
             "bit_flip_mutation",
-            100,
+            150,
             0.05,
             0.5,
-            10
+            20
         ]
     ],
     [
-        3.8086863931360555,
+        40.0,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
             100,
             0.05,
             0.5,
-            10
+            20
         ]
     ],
     [
-        3.8077071458616407,
+        39.9,
         [
-            "tournament_seletion",
-            "one_point_crossover",
+            "proportional_seletion",
+            "n_point_crossover",
             "bit_flip_mutation",
             150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.805906377668839,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
             0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.804461723199938,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
             0.7,
             10
         ]
     ],
     [
-        3.7941002952929126,
+        39.8,
         [
             "proportional_seletion",
             "n_point_crossover",
             "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            10
+            150,
+            0.05,
+            0.7,
+            20
         ]
     ],
     [
-        3.7896609489770277,
+        39.6,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
             150,
-            0.01,
-            0.7,
+            0.05,
+            0.5,
             10
         ]
     ],
     [
-        3.7893652661553268,
+        39.5,
         [
-            "tournament_seletion",
-            "one_point_crossover",
+            "proportional_seletion",
+            "n_point_crossover",
             "bit_flip_mutation",
             150,
             0.05,
-            0.7,
+            0.5,
             10
         ]
     ],
     [
-        3.7845435405299797,
+        39.3,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.784378086867263,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
             "bit_flip_mutation",
-            50,
-            0.01,
+            150,
+            0.05,
             0.5,
             20
         ]
     ],
     [
-        3.782455646697202,
+        39.2,
         [
             "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.7744847221324087,
-        [
-            "tournament_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
             100,
-            0.02,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.772588165615846,
+        39.1,
         [
-            "tournament_seletion",
+            "proportional_seletion",
             "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.7689238614436826,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.763233376466296,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
             "bit_flip_mutation",
             150,
-            0.01,
+            0.05,
             0.7,
             20
         ]
     ],
     [
-        3.7595408920675055,
+        39.0,
         [
             "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.758054685275475,
-        [
-            "tournament_seletion",
             "uniform_crossover",
             "bit_flip_mutation",
-            100,
-            0.01,
+            150,
+            0.05,
             0.7,
-            10
-        ]
-    ],
-    [
-        3.753201876445573,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.74188090776952,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.7398226383884996,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.7392450473464365,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.738265080945981,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.735640267188045,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.7341295469746867,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.7276007841435743,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.7268668731208465,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.7266362459890194,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.7250739478862998,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.723937022828489,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.7116684642644713,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.6967618560617277,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.6816684865902913,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.6812139426934536,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.677524074213758,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.6720474055552117,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.6604857821177554,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.6516640718770104,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.633221990461491,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.629002190938901,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.6150661274351243,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.585283625624135,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.5536339262977266,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.5455160630783396,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.5290003505979066,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.5253905467473023,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.517533501935109,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.5115369568467285,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.492899798613948,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.492108784406928,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.489512403801207,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.4797011441164885,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.4763888869142128,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.4724779894079596,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.470692849923701,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.460206994104029,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.4540294362869313,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.4521064172673754,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.411576902615736,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.367940243291623,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.3518629817976295,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.350384330101954,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.3496139178937945,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.3423296804628064,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.3389169151140563,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.332919470966079,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.3178308304869804,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.3176272570330596,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.316890569625458,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.3155997154739216,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.3139955662176086,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.310331559238457,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.2979650586585465,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.289520085166695,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.2893215479466917,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.2850440894943107,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.272901359496418,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.272086957472722,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.271439630837846,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.2565856579455064,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.2518611544960736,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.2462908170035147,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.2397851862802214,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.23915981296138,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.2352396416983873,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.2340856692452533,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.232417997515263,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.2288256033454568,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.2273101744988097,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.224042856300465,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.223342030902798,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.222253202463436,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.2181380816478224,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.2178770734396673,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.2137162366611753,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.213597483381728,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.201789195992588,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.201251645043856,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.2007999785427472,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.186043882899054,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1858301824475213,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.185758250842413,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.1843277656569122,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.181594524816847,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.176643319977362,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.1659873094016744,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.165656918054551,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.162643128937984,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.162325490947423,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.1620946852853606,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.159365493509219,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.158753964619442,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.1574338455598507,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.1553520159909354,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1547607802663746,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.1544889613161704,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.152787367239397,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.1371741302582743,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.136419961755892,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1356312172949106,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.1356007470119858,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.135442796181745,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.135003930270621,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.1321278331336013,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1302930578072634,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.1300863941007897,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.129667899542181,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.1292398197694995,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.124834305342344,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.122187341038297,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.120157255696564,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1197843600264084,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.118769867596769,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1167516798654313,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.115171033551836,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.114183953928637,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1102421208057134,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.1079000024467986,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.104023233114975,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1021685974717697,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.1019858573086085,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.101939114413247,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.1017738580370615,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.100711152035981,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.100082417546199,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.0968730167587437,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.096249322351955,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.0956261958204827,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0951877660396745,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.089542239588693,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.0881992056886167,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.085067304775151,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.084559890057834,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.084358669955105,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.0816662409479205,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.077594645394279,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.0769313563136795,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.076887344727271,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.0743452823599067,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0638902047355456,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.059023853806763,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.058235066448942,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0565022118665426,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.052094871448566,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.0520567202593774,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.051523403201988,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.0481062380045643,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.0470603470004036,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.0455778981305874,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0452337083033783,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.0431229982831622,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0418318883218163,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.036265510023269,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0361333860443236,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.0348314440978106,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.031080567586474,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.030773816382918,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.024544503317561,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        3.0216132491807404,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.0174783977568946,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.017182565102593,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.013135958803451,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.0113696728709938,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0065215451438454,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        3.0064785169218053,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.0024631278675384,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        3.0016148689428457,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        3.0013025653640986,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9996658770975313,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.9946647169183978,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.992210017691465,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.989306120384215,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.987256626892694,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9858082685942504,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9856881387706786,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9855510091976276,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.9825839504346754,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.9825817907983057,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.980338326371774,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9768756159299685,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.974369990352323,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.974304976023088,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.96850788275126,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9683597604170564,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9682535606915623,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9645421660263316,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.963624548144496,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9624228092501634,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9604181348155145,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.958878731042574,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9563044370016875,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.953353425809767,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9484035394851773,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.947957652119489,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.947586969798725,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.946139747453905,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.945420525809374,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9436822510852676,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.9428163721936427,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9420257293263896,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9385594640938604,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.93716295577209,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9332738493933026,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9298716068207264,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.92873247726751,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9225838365631143,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9219971888283593,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.91923218427778,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.9151436003734563,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.914117054184442,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9132662160895135,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.90859088021294,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.908280160989776,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9076687975132622,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9057558445331666,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.9054956140419437,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.905468492973415,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.90505132025267,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9047548811140054,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.9025429606905417,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.9019188091414803,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8963168152535412,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8945911638167443,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.89432233397435,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.8908268817570586,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8887238354604245,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8852890120036414,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8783468857954664,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.8781718411460018,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.876729030947026,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.876250208951947,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8753498942826616,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.872114464536855,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.870333906556165,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.869658198577688,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8675389020094,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.862707609823178,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.862557060211438,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.860934389531502,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.86053821995962,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8566945748864447,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8553941547451176,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.8552740220648327,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8536787816566225,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.849538080251687,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8493471533679036,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8462251158503284,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8458903751056988,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.845777137682556,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.845039294944441,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8443488257184546,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8442836492243275,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.842630807993971,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.841007562817348,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8405591001828254,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.839383895109026,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8372230261740303,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.835948943697953,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.8332612763844187,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.831201214819999,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.8259518716281584,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.819519328425595,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.8089223637898337,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8073834673472033,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.804296212172866,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.804250530252694,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.8006726802747366,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.799794395449753,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.798451968394998,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.797885223310853,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.7966065496776547,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.7957135461074554,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.795576604846575,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.7954717917770067,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.792561136716867,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.7911079894460515,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            100,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.7890409618414056,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.05,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.7886131908521454,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.788365250788683,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.787510211612129,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.785377914024275,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.7764587178500366,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.7750710721769343,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.7699821472069774,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.76958303796199,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.7640981218755405,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.762960317532359,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.7616098300337395,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.761332167967591,
-        [
-            "proportional_seletion",
-            "n_point_crossover",
-            "bit_flip_mutation",
-            50,
-            0.05,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.7590024551401777,
-        [
-            "proportional_seletion",
-            "uniform_crossover",
-            "bit_flip_mutation",
-            150,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.752301042875314,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.749208046119524,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.7457769457566235,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.736595454447799,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.7361587438660253,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.7359878148814305,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.730729355140234,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.730728303516243,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.717712468807031,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.717165565848211,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.7133413860469093,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.705088821084479,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.703816495396229,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.7026920674599664,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.02,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.695702732808585,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.02,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.6948011943074173,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            150,
-            0.02,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.6930828622881,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.6892522813454858,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.687443026498937,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.68614600436858,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.6725168766819336,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.6552413186474952,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.651315160712609,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.649998660754746,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.640774824325136,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.6319124200835544,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.6290904215232453,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.6116764665981265,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.6047646707378904,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.6007928079510174,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            10
-        ]
-    ],
-    [
-        2.5993666585531843,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.5941461462543165,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.587974701070959,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            150,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.5853571535728697,
-        [
-            "proportional_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.5810522043199446,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.5664860068131867,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.558125876042997,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.7,
-            20
-        ]
-    ],
-    [
-        2.553096973888279,
-        [
-            "tournament_seletion",
-            "uniform_crossover",
-            "swap_mutation",
-            100,
-            0.01,
-            0.5,
-            10
-        ]
-    ],
-    [
-        2.5501889809710354,
-        [
-            "tournament_seletion",
-            "n_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.485004476746721,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
-            20
-        ]
-    ],
-    [
-        2.4415231833295588,
-        [
-            "tournament_seletion",
-            "one_point_crossover",
-            "swap_mutation",
-            50,
-            0.01,
-            0.5,
             10
         ]
     ]
